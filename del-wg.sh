@@ -16,10 +16,11 @@ source /etc/wireguard/params
 	echo ""
 	grep -E "^### Client" "/etc/wireguard/$SERVER_WG_NIC.conf" | cut -d ' ' -f 3-4 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
-	echo ""
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
+			echo ""
 			read -rp "       Select one client [1] : " CLIENT_NUMBER
 		else
+			echo ""
 			read -rp "       Select one client [1-${NUMBER_OF_CLIENTS}] : " CLIENT_NUMBER
 		fi
 	done
