@@ -1,7 +1,6 @@
 #!/bin/bash
-clear
                hariini=`date +%d-%m-%Y`
-               echo "EXPIRED USERS HAS BEEN REMOVED ."
+               echo "  |?> REMOVING EXPIRED USERS ."
                echo "--------------------------------------"
                echo ""
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
@@ -35,5 +34,7 @@ clear
                fi
                done
                echo " "
+	       echo "  SUCCES FOR REMOVING EXPIRED USERS ."
                echo "--------------------------------------"
-               echo ""
+	       sleep 4
+               tessh
