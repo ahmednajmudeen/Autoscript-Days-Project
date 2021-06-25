@@ -13,5 +13,6 @@ echo " ";
 echo " No user has committed a violation"
 fi
 echo " ";
+echo " ";
 echo "===========================================";
 echo " ";
