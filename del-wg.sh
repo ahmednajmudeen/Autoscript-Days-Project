@@ -6,6 +6,7 @@ source /etc/wireguard/params
 		clear
 		echo ""
 		echo "       You have no existing clients!"
+		sleep 2
 		wgg
 	fi
 	echo ""
@@ -38,8 +39,5 @@ source /etc/wireguard/params
 	service cron restart
 echo ""
 echo ""
-echo -e "   Account Wireguard Successfully Deleted"
-echo -e "   ======================================"
-echo -e "   Client Name : $user"
-echo -e "   Expired On  : $exp"
+echo "       Client Name $user Account Wireguard Successfully Deleted"
 echo ""
