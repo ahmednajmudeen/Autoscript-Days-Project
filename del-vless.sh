@@ -13,8 +13,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 	echo " =============================================="
 	echo ""
 	grep -E "^### " "/etc/v2ray/vless.json" | cut -d ' ' -f 2-3 | nl -s ') '
-	echo ""
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
+	echo ""
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
 			read -rp "    Select one client [1] : " CLIENT_NUMBER
 		else
