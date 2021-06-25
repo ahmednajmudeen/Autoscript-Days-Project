@@ -4,7 +4,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/premium-script/data-user-sstp")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo ""
 		echo "       You have no existing clients!"
-		exit 1
+		sleep 2
+		ssstp
 	fi
 	echo ""
 	echo "   Press CTRL+C to return"
