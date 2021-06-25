@@ -14,7 +14,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/config.json")
 	echo ""
 	grep -E " ^### " "/etc/v2ray/config.json" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
-		echo " "
+		echo ""
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
 			read -rp "       Select one client [1] : " CLIENT_NUMBER
 		else
