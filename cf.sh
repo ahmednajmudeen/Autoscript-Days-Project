@@ -69,8 +69,10 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      -H "X-Auth-Key: ${CF_KEY}" \
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'${SUB_DOMAIN}'","content":"'${IP}'","ttl":120,"proxied":false}')
-echo "Host : $SUB_DOMAIN"
+echo " "
+echo "       Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /root/domain
-echo "in folder /etc/v2ray/domain"
-sleep 8
+echo "       in folder /etc/v2ray/domain"
+sleep 5
+clear
 rm -f /root/cf.sh
