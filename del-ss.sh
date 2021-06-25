@@ -4,7 +4,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/shadowsocks-libev/akun.conf")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo "       You have no existing clients!"
 		echo ""
-		sleep 3
+		sleep 2
 		sssr
 	fi
 	echo ""
