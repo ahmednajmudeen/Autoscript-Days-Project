@@ -27,10 +27,10 @@ EOF
 echo -e "### $user $exp">>"/var/lib/premium-script/data-user-sstp"
 clear
 figlet "  AUTOSCRIPT.NET" | lolcat
-echo -e "$(tput setaf 8)#By Days-Project <?>  {BETA}$(tput sgr 0)"
-echo -e "-------------------------------------------------------------------------------------" | lolcat
-echo -e " <> SSH & OVPN <> ALL VPN <> WEBMIN | MANUAL <> TOOLS HACKING <> CREDIT CARD VULN <> " | lolcat
-echo -e "-------------------------------------------------------------------------------------" | lolcat
+echo -e "$(tput setaf 8)#By Days-Project <?>{beta}<?>$(tput sgr 0)"
+echo -e "---------------------------------------------------------------------------------------" | lolcat
+echo -e "  <> SSH & OVPN <> ALL VPN <> WEBMIN | MANUAL <> TOOLS HACKING <> CREDIT CARD VULN <>  " | lolcat
+echo -e "---------------------------------------------------------------------------------------" | lolcat
 echo -e ""
 echo -e ""
 echo -e ""
