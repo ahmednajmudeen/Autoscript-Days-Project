@@ -4,7 +4,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/config.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo ""
 		echo "       You have no existing clients!"
-		exit 1
+		sleep 2
+		wss
 	fi
 	echo ""
 	echo " Press CTRL+C to return"
@@ -17,7 +18,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/config.json")
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
 			read -rp "       Select one client [1] : " CLIENT_NUMBER
 		else
-			read -rp "       Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
+			read -rp "       Select one client [1-${NUMBER_OF_CLIENTS}] : " CLIENT_NUMBER
 		fi
 	done
 user=$(grep -E "^### " "/etc/v2ray/config.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
@@ -28,8 +29,5 @@ rm -f /etc/v2ray/$user-tls.json /etc/v2ray/$user-none.json
 systemctl restart v2ray
 systemctl restart v2ray@none
 echo -e ""
-echo -e "   Vmess account successfully deleted"
-echo -e "   =================================="
-echo -e "   Client Name : $VPN_USER"
-echo -e "   Expired On  : $exp"
+echo -e "       Client Name $VPN_USER Vmess account successfully deleted"
 echo -e ""
