@@ -14,5 +14,4 @@ echo -e "   $(tput setaf 35)Success to add domain $host for ip vps $IP_PUBLIC $(
 echo -e ""
 echo -e "   Cek your host DOMAIN in directory ( /var/lib/premium-script/ipvps.conf )"
 echo -e ""
-certv2ray
 fi
