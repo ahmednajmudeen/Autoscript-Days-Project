@@ -4,7 +4,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 	if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 		echo ""
 		echo "      You have no existing clients!"
-		exit 1
+		wss
 	fi
 	echo ""
 	echo "  Press CTRL+C to return"
@@ -28,8 +28,5 @@ systemctl restart v2ray@vless
 systemctl restart v2ray@none
 echo -e ""
 echo -e ""
-echo -e "  Account Vless Successfully Deleted"
-echo -e "  =================================="
-echo -e "  Client Name : $user"
-echo -e "  Expired On  : $exp"
+echo -e "      Client Name $user Account Vless Successfully Deleted"
 echo -e ""
