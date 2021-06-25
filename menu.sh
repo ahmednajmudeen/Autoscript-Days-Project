@@ -108,7 +108,7 @@ sudo -i
 ;;
 
 *)
-echo -e "       $(tput setaf 1) Please enter an correct number! $(tput sgr 0)"
+echo -e "       $(tput setaf 1) Please enter a correct number! $(tput sgr 0)"
 sleep 3
 menu
 ;;
