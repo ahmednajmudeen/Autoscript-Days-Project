@@ -19,10 +19,7 @@ fi
 done < /etc/passwd
 JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
 echo ""
-echo ""
-echo ""
 echo "---------------------------------------------------"
 echo "  Total Accounts Registered : $(tput setaf 35)$JUMLAH user$(tput sgr 0)"
 echo "---------------------------------------------------"
-echo ""
 echo ""
