@@ -29,8 +29,5 @@ systemctl restart trojan
 service cron restart
 echo -e ""
 echo -e ""
-echo -e "  Account Trojan Successfully Deleted"
-echo -e "  ==================================="
-echo -e "  Client Name : $user"
-echo -e "  Expired On  : $exp"
+echo -e "      Client Name $user Account Trojan Successfully Deleted"
 echo -e ""
