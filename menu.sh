@@ -46,7 +46,7 @@ echo -e "    \e[032;1mSystem Uptime           :   \e[0m  $up"
 echo -e ""
 echo -e "$(tput setaf 8)--------------------------------------------------------------------------------------$(tput sgr 0)"
 echo -e ""
-echo -e "                        -=THIS IS MENU LIST BY DAYS PROJECT =-"
+echo -e "                              -=THIS ARE MENU LIST VPN=-"
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
 echo -e "         1.  Control Panel SSH & OVPN"
