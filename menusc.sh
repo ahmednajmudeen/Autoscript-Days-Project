@@ -80,7 +80,8 @@ echo ""
 echo "           Use {CTRL+C} for Cancel!"
 echo ""
 read -rp "       Insert Target IP      : " ip
-read -rp "       Insert Port IP        : " portread -rp "       Insert Packet <Bytes> : " packet
+read -rp "       Insert Port IP        : " port
+read -rp "       Insert Packet {Bytes} : " packet
 clear
 echo "           $(tput setaf 35)Ready to Attack <$ip:$port> With Send Packet <$packet Bytes>$(tput sgr 0)"
 sleep 2
