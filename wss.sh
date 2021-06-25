@@ -8,7 +8,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e ""
 echo -e ""
 echo -e ""
-echo -e "                                   -=V2RAY VMESS MENU=-"
+echo -e "                                 -=V2RAY VMESS MENU=-"
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
 echo -e "        1.  Create Vmess Websocket Account"
