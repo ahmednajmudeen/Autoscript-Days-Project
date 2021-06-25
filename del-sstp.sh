@@ -26,8 +26,5 @@ exp=$(grep -E "^###" /var/lib/premium-script/data-user-sstp | cut -d ' ' -f 3 | 
 sed -i "/^### $user $exp/d" /var/lib/premium-script/data-user-sstp
 sed -i '/^'"$user"'/d' /home/sstp/sstp_account
 echo -e ""
-echo -e "  Account SSSTP Successfully Deleted"
-echo -e "  =================================="
-echo -e "  Client Name : $user"
-echo -e "  Expired On  : $exp"
+echo -e "      Client Name $user Account SSSTP Successfully Deleted"
 echo -e ""
