@@ -13,11 +13,12 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/premium-script/data-user-pptp")
 	echo " ============================================="
 	echo ""
 	grep -E "^### " "/var/lib/premium-script/data-user-pptp" | cut -d ' ' -f 2-3 | nl -s ') '
-	echo ""
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
+			echo ""
 			read -rp "      Select One Client [1] : " CLIENT_NUMBER
 		else
+			echo ""
 			read -rp "       Select One Client [1-${NUMBER_OF_CLIENTS}] : " CLIENT_NUMBER
 		fi
 	done
