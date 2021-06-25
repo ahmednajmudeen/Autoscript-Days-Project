@@ -87,8 +87,15 @@ apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rs
 clear
 # Configuration wellcome
 echo "   Configuration Wellcome From This Script"
-sleep 3
+sleep 2
 cat > /root/.profile <<-END
+# ~/.profile: executed by Bourne-compatible login shells.
+
+if [ "$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
+fi
 clear
 echo -e ""
 figlet Wellcome Beps | lolcat
@@ -104,10 +111,10 @@ read -rp "    Tell me!  What do you want?   " apa
 echo -e ""
 $apa
 END
-echo "   Success . . . "
-sleep 3
 clear
-
+echo "   Success . . . "
+sleep 2
+clear
 # install webserver
 apt -y install nginx
 cd
@@ -327,7 +334,7 @@ apt autoremove -y
 #===============================================================================================================================================
 cd
 clear
-echo -e " $(tput setaf 1)This is take a several minutes , Please wait!$(tput sgr 0)"
+echo -e "$(tput setaf 35)This is take a several minutes , Please wait!"
 echo -e ""
 chown -R www-data:www-data /home/vps/public_html
 /etc/init.d/nginx restart
@@ -348,6 +355,8 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7600 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7700 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7800 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7900 --max-clients 500
+echo -e ""
+echo -e " Successed . . .$(tput sgr 0)"
 history -c
 echo "unset HISTFILE" >> /etc/profile
 clear
