@@ -21,13 +21,14 @@ echo -e ""
 echo -e "     -=Status Auto Kill $sts=-"
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
-echo -e "     [1]  AutoKill After 5 Minutes"
-echo -e "                                        [3]  AutoKill After 15 Minutes"
-echo -e "     [2]  AutoKill After 10 Minutes"
-echo -e "                                        [4]  Turn Off AutoKill/MultiLogin"
+echo -e "        1.  AutoKill After 5 Minutes"
+echo -e "                                           3.  AutoKill After 15 Minutes"
+echo -e "        2.  AutoKill After 10 Minutes"
+echo -e "                                           4.  Turn Off AutoKill/MultiLogin"
 echo -e ""
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
-echo -e "                             [b] $(tput setaf 35)Back$(tput sgr 0)   |   [x]  $(tput setaf 1)Exit$(tput sgr 0)"
+echo -e ""
+echo -e "                             {b} $(tput setaf 35)BACK$(tput sgr 0)   |   {x}  $(tput setaf 1)EXIT$(tput sgr 0)"
 echo -e ""
 read -p "       What do you want from this menu      :  " AutoKill
 case $AutoKill in
