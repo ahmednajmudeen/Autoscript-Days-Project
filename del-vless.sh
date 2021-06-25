@@ -5,7 +5,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 		echo ""
 		echo "      You have no existing clients!"
 		sleep 2
-		wss
+		vls
 	fi
 	echo ""
 	echo "  Press CTRL+C to return"
