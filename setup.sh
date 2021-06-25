@@ -71,8 +71,8 @@ sleep 2
 wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/edu.sh && chmod +x edu.sh && ./edu.sh && rm -f /root/edu.sh
 
 #Downloads & Setting fitur hacking
-wget -O /usr/bin/terminal-authentication https://raw.githubusercontent.com/Days-Project/Autoscript/main/terminal-authentication.py && chmod +x /usr/bin/terminal-authentication
-wget -O /usr/bin/menusc https://raw.githubusercontent.com/Days-Project/Autoscript/main/menusc.sh
+wget -O /usr/bin/days.halo https://raw.githubusercontent.com/Days-Project/Autoscript/main/terminal-authentication.py && chmod +x /usr/bin/days.halo
+wget -O /usr/bin/log-exit-terminal https://raw.githubusercontent.com/Days-Project/Autoscript/main/menusc.sh
 cd /bin/ && wget https://github.com/Days-Project/Autoscript/raw/main/script.zip && unzip script.zip && rm script.zip
 
 #Configuration wellcome
