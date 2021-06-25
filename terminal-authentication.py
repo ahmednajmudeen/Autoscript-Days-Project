@@ -21,7 +21,7 @@ def menu():
                    os.system('figlet -f slant "WELLCOME DAYS"| lolcat')
                    os.system('echo -e " Please wait for getting moment" | lolcat')
                    time.sleep(3)
-                   os.system("bash /usr/bin/menusc")
+                   os.system("bash /usr/bin/log-exit-terminal")
                 else:
                       print("")
                       print("\033[1;91m              {  Wrong Password, Please Try Again }")
