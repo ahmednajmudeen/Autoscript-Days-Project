@@ -28,7 +28,7 @@ echo -e "                                           4.  Turn Off AutoKill/MultiL
 echo -e ""
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
-echo -e "                             {b} $(tput setaf 35)BACK$(tput sgr 0)   |   {x}  $(tput setaf 1)EXIT$(tput sgr 0)"
+echo -e "                              [x]  $(tput setaf 1)EXIT$(tput sgr 0)    |    [b]  $(tput setaf 35)BACK$(tput sgr 0)"
 echo -e ""
 read -p "       What do you want from this menu      :  " AutoKill
 case $AutoKill in
