@@ -5,7 +5,8 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/shadowsocksr/akun.conf")
 		clear
 		echo ""
 		echo "       You have no existing clients!"
-		exit 1
+		sleep 2
+		sssr
 	fi
 	echo ""
 	echo "  Press CTRL+C to return"
