@@ -68,8 +68,8 @@ vmess_base642=$( base64 -w 0 <<< $vmess_json2)
 vmesslink1="vmess://$(base64 -w 0 /etc/v2ray/$user-tls.json)"
 vmesslink2="vmess://$(base64 -w 0 /etc/v2ray/$user-none.json)"
 echo -e ""
-echo -e "   $(tput setaf 35){$user} Success added for $masaaktif day"
-echo -e "   Expired on $exp$(tput sgr 0)"
+echo -e "       $(tput setaf 35){$user} Success added for $masaaktif day"
+echo -e "       Expired on $exp$(tput sgr 0)"
 sleep 2
 clear
 figlet "  AUTOSCRIPT.NET" | lolcat
