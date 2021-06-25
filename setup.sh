@@ -64,11 +64,39 @@ sleep 2
 wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh && rm -f /root/ipsec.sh
 wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh && rm -f /root/set-br.sh
 
-#install ssh ws
+#install ssh edu
 clear
 echo -e "         STEP 7 install SSH EDU"
 sleep 2
 wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/edu.sh && chmod +x edu.sh && ./edu.sh && rm -f /root/edu.sh
+
+# Configuration wellcome
+echo "         Configuration Wellcome From This Script"
+sleep 2
+cat > /root/.profile <<-END
+# ~/.profile: executed by Bourne-compatible login shells.
+
+if [ "$BASH" ]; then
+  if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+  fi
+fi
+clear
+echo -e ""
+figlet Wellcome Beps | lolcat
+sleep 2
+neofetch
+echo -e ""
+echo -e "    Please Call me with write $(tput setaf 35)menu$(tput sgr 0) for show all menu list from this auto script!"
+echo -e "    Or maybe . . . you are can use this terminal how you like . whatever"
+echo -e "    Enjoy, you can tell my BOSS. she is Days , what are you have her number whatsapp?"
+echo -e "    Her Number whatsapp +6287891876989"
+echo -e ""
+read -rp "    Tell me!  What do you want? " apa
+$apa
+END
+echo "         Success . . . "
+sleep 2
 
 #Finishing
 clear
