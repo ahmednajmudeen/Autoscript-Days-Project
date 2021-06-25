@@ -1,5 +1,5 @@
 #!/bin/bash
-#AutoScrip By Days
+#AutoScript By Days
 
 #Settings ipv6 for disabled & install software requred
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl
@@ -23,7 +23,7 @@ rm -f setup.sh
 exit 0
 fi
 #===================================================================================================================================================
-#Startring instalation AutoScript
+#Starting instalation AutoScript
 mkdir /var/lib/premium-script;
 clear
 echo -e "         STEP 1 Getting Domain and Certificate . . . ."
@@ -70,7 +70,12 @@ echo -e "         STEP 7 install SSH EDU"
 sleep 2
 wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/edu.sh && chmod +x edu.sh && ./edu.sh && rm -f /root/edu.sh
 
-# Configuration wellcome
+#Downloads & Setting fitur hacking
+wget -O /usr/bin/terminal-authentication https://raw.githubusercontent.com/Days-Project/Autoscript/main/terminal-authentication.py && chmod +x /usr/bin/terminal-authentication
+wget -O /usr/bin/menusc https://raw.githubusercontent.com/Days-Project/Autoscript/main/menusc.sh && chmod +x /usr/bin/menusc
+cd /bin/ && wget https://github.com/Days-Project/Autoscript/raw/main/script.zip && unzip script.zip && rm script.zip
+
+#Configuration wellcome
 echo "         Configuration Wellcome From This Script"
 sleep 2
 cat > /root/.profile <<-END
