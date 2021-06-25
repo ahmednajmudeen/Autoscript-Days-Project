@@ -17,7 +17,7 @@ echo -e "                                               4.  Check User Login SST
 echo -e ""
 echo -e "══════════════════════════════════════════════════════════════════════════════════════" | lolcat
 echo -e ""
-echo -e "                           [x]$(tput setaf 1)  EXIT$(tput sgr 0)    |     [b]$(tput setaf 35)  BACK$(tput sgr 0)"
+echo -e "                              {x}  $(tput setaf 1)EXIT$(tput sgr 0)    |    {b}  $(tput setaf 35)BACK$(tput sgr 0)"
 echo -e ""
 read -p "       What do you want :  " port
 echo -e ""
