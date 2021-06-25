@@ -39,7 +39,6 @@ sed -i "/^# BEGIN_Backup/,/^# END_Backup/d" /etc/crontab
 service cron restart
 sleep 1
 echo "        Please Wait"
-clear
 echo "        $(tput setaf 1)Autobackup Has Been Stopped!$(tput sgr 0)"
 exit 0
 }
