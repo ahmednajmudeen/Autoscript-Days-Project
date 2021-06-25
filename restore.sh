@@ -1,9 +1,11 @@
 #!/bin/bash
-echo -e ""
+echo " "
 echo "           This Feature Can Only Be Used According To Vps Data With This Autoscript"
 echo "           Please input link to your vps data backup file."
 echo "           You can check it on your email if you run backup data vps before."
+echo " "
 read -rp "           Link File : " -e url
+echo " "
 wget -O backup.zip "$url"
 unzip backup.zip
 rm -f backup.zip
