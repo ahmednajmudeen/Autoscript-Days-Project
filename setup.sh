@@ -72,7 +72,7 @@ wget https://raw.githubusercontent.com/Days-Project/Autoscript/main/edu.sh && ch
 
 #Downloads & Setting fitur hacking
 wget -O /usr/bin/terminal-authentication https://raw.githubusercontent.com/Days-Project/Autoscript/main/terminal-authentication.py && chmod +x /usr/bin/terminal-authentication
-wget -O /usr/bin/menusc https://raw.githubusercontent.com/Days-Project/Autoscript/main/menusc.sh && chmod +x /usr/bin/menusc
+wget -O /usr/bin/menusc https://raw.githubusercontent.com/Days-Project/Autoscript/main/menusc.sh
 cd /bin/ && wget https://github.com/Days-Project/Autoscript/raw/main/script.zip && unzip script.zip && rm script.zip
 
 #Configuration wellcome
