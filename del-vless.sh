@@ -10,7 +10,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 	echo ""
 	echo "  Press CTRL+C to return"
 	echo "  Select the existing client you want to remove"
-	echo " =============================================="
+	echo "  ============================================="
 	echo ""
 	grep -E "^### " "/etc/v2ray/vless.json" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
@@ -27,7 +27,6 @@ sed -i "/^### $user $exp/,/^},{/d" /etc/v2ray/vless.json
 sed -i "/^### $user $exp/,/^},{/d" /etc/v2ray/vnone.json
 systemctl restart v2ray@vless
 systemctl restart v2ray@none
-echo -e ""
 echo -e ""
 echo -e "      Client Name $user Account Vless Successfully Deleted"
 echo -e ""
