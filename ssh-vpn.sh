@@ -84,37 +84,6 @@ sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 # install
 apt-get --reinstall --fix-missing install -y bzip2 gzip coreutils wget screen rsyslog iftop htop net-tools zip unzip wget net-tools curl nano sed screen gnupg gnupg1 bc apt-transport-https build-essential dirmngr libxml-parser-perl neofetch git lsof
 
-clear
-# Configuration wellcome
-echo "   Configuration Wellcome From This Script"
-sleep 2
-cat > /root/.profile <<-END
-# ~/.profile: executed by Bourne-compatible login shells.
-
-if [ "$BASH" ]; then
-  if [ -f ~/.bashrc ]; then
-    . ~/.bashrc
-  fi
-fi
-clear
-echo -e ""
-figlet Wellcome Beps | lolcat
-echo -e ""
-echo -e ""
-echo -e ""
-echo -e "    Please Call me with write $(tput setaf 35)menu$(tput sgr 0) for show all menu list from this auto script!"
-echo -e "    Or maybe . . . you are can use this terminal how you like . whatever"
-echo -e "    Enjoy, you can tell my BOSS. she is Days , what are you have her number whatsapp?"
-echo -e "    Her Number whatsapp +6287891876989"
-echo -e ""
-read -rp "    Tell me!  What do you want?   " apa
-echo -e ""
-$apa
-END
-clear
-echo "   Success . . . "
-sleep 2
-clear
 # install webserver
 apt -y install nginx
 cd
