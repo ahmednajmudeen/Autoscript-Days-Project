@@ -1,4 +1,7 @@
 #!/bin/bash
+
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl wget
+
 if [ "${EUID}" -ne 0 ]; then
 		echo -e"    $(tput setaf 1)You need to run this script as root!$(tput sgr 0)"
 		exit 1
