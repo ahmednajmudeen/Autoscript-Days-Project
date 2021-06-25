@@ -2,7 +2,7 @@
 #AutoScrip By Days
 
 #Settings ipv6 for disabled & install software requred
-sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl wget
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl
 
 #Detect User Root or Not
 if [ "${EUID}" -ne 0 ]; then
