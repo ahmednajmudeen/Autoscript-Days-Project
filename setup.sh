@@ -121,7 +121,7 @@ echo "   - Restore Data" | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "-------------------------------------------------------------------------------" | tee -a log-install.txt
+echo "------------------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""
 echo "    Reboot in 15 sec"
 sleep 15
