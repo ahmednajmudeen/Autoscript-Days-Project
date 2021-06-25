@@ -14,11 +14,12 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/v2ray/vless.json")
 	echo ""
 	grep -E "^### " "/etc/v2ray/vless.json" | cut -d ' ' -f 2-3 | nl -s ') '
 	until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]]; do
-	echo ""
 		if [[ ${CLIENT_NUMBER} == '1' ]]; then
+			echo ""
 			read -rp "    Select one client [1] : " CLIENT_NUMBER
 		else
-			read -rp "    Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
+			echo ""
+			read -rp "    Select one client [1-${NUMBER_OF_CLIENTS}] : " CLIENT_NUMBER
 		fi
 	done
 user=$(grep -E "^### " "/etc/v2ray/vless.json" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
