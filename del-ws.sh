@@ -27,8 +27,5 @@ rm -f /etc/v2ray/$user-tls.json /etc/v2ray/$user-none.json
 systemctl restart v2ray
 systemctl restart v2ray@none
 echo -e ""
-echo -e "   Vmess account successfully deleted"
-echo -e "   =================================="
-echo -e "   Client Name : $VPN_USER"
-echo -e "   Expired On  : $exp"
+echo -e "       Client Name $VPN_USER Vmess account successfully deleted"
 echo -e ""
