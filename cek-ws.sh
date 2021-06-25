@@ -1,9 +1,9 @@
 #!/bin/bash
 echo -n > /tmp/other.txt
 data=( `cat /etc/v2ray/config.json | grep '^###' | cut -d ' ' -f 2`);
-echo "--------------------------------";
-echo "-----=[ Vmess User Login ]=-----";
-echo "--------------------------------";
+echo "------------------------------";
+echo "=====[ Vmess User Login ]=====";
+echo "------------------------------";
 for akun in "${data[@]}"
 do
 if [[ -z "$akun" ]]; then
@@ -28,15 +28,13 @@ echo > /dev/null
 else
 jum2=$(cat /tmp/ipvmess.txt | nl)
 echo "user : $akun";
-echo " ";
 echo "$jum2";
-echo "--------------------------------"
+echo "------------------------------"
 fi
 rm -rf /tmp/ipvmess.txt
 done
 oth=$(cat /tmp/other.txt | sort | uniq | nl)
 echo "other";
-echo " ";
 echo "$oth";
-echo "--------------------------------"
+echo "------------------------------"
 rm -rf /tmp/other.txt
