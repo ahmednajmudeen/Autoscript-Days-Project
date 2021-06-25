@@ -75,10 +75,10 @@ AllowedIPs = $CLIENT_ADDRESS/32" >>"/etc/wireguard/$SERVER_WG_NIC.conf"
 	cp $HOME/$SERVER_WG_NIC-client-$CLIENT_NAME.conf /home/vps/public_html/$CLIENT_NAME.conf
 clear
 figlet "  AUTOSCRIPT.NET" | lolcat
-echo -e "$(tput setaf 8)#By Days-Project <?>  {BETA}$(tput sgr 0)"
-echo -e "-------------------------------------------------------------------------------------" | lolcat
-echo -e " <> SSH & OVPN <> ALL VPN <> WEBMIN | MANUAL <> TOOLS HACKING <> CREDIT CARD VULN <> " | lolcat
-echo -e "-------------------------------------------------------------------------------------" | lolcat
+echo -e "$(tput setaf 8)#By Days-Project <?>{beta}<?>$(tput sgr 0)"
+echo -e "---------------------------------------------------------------------------------------" | lolcat
+echo -e "  <> SSH & OVPN <> ALL VPN <> WEBMIN | MANUAL <> TOOLS HACKING <> CREDIT CARD VULN <>  " | lolcat
+echo -e "---------------------------------------------------------------------------------------" | lolcat
 echo -e ""
 echo -e ""
 echo -e ""
