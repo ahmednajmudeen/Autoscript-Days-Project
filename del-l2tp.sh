@@ -6,7 +6,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/var/lib/premium-script/data-user-l2tp")
 		echo ""
 		echo "        You have no existing clients!"
 		echo ""
-		sleep 3
+		sleep 2
 		ltp
 	fi
 	echo ""
