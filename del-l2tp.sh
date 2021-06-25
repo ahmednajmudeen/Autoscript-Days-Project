@@ -34,8 +34,5 @@ sed -i "/^### $VPN_USER $exp/d" /var/lib/premium-script/data-user-l2tp
 # Update file attributes
 chmod 600 /etc/ppp/chap-secrets* /etc/ipsec.d/passwd*
 echo -e ""
-echo -e "  Account L2TP Successfully Deleted"
-echo -e "  ================================="
-echo -e "  Client Name : $VPN_USER"
-echo -e "  Expired On  : $exp"
+echo -e "     Client Name $VPN_USER from Account L2TP Successfully Deleted"
 echo -e ""
