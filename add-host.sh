@@ -1,3 +1,4 @@
+#!bin/bash
 echo -e ""
 echo -e ""
 read -rp "   !> Domain : " -e host
